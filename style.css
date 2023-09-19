@@ -1,0 +1,319 @@
+body{
+    margin: auto;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-image: url("images/desktop/image-hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 485px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.col p{
+    font-family: sans-serif;
+    color: #fff;
+    font-weight: 800;
+    font-size: 25px;
+}
+.col ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 50px;
+    display: none;
+
+}
+header h1{
+    border: 1px solid #fff;
+    padding: 25px;
+    color: #fff;
+    font-family: sans-serif;
+    margin-top: 130px;
+}
+header ul{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 50px;
+   
+}
+ul li{
+    list-style: none;
+}
+ul a{
+    text-decoration: none;
+    color: #fff;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 80px;
+}
+.container img{
+    height: 300px;
+    object-fit: cover;
+}
+.container h1{
+    font-family: sans-serif;
+    font-weight: 100;
+}
+.container p{
+    color: gray;
+}
+.container-text{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 140px;
+}
+
+.creations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.creations .row{
+    display: flex;
+    flex-direction: row;
+    gap: 670px;
+}
+.creations .row h1{
+    font-family: sans-serif;
+    font-weight: 100;
+}
+.creations .row button{
+    outline: 0;
+    border: 1px solid #000;
+    color: #000;
+    padding: 3px;
+    background-color: #fff;
+    width: 150px;
+    cursor: pointer;
+    transition: background-color 250ms, color 250ms;
+}
+.creations .row button:hover{
+    background-color: #000;
+    color: #fff;
+}
+.creations-img h3{
+    color: #fff;
+    font-family: sans-serif;
+    transform: translate(30px,-120px);
+    font-weight: 100;
+    font-size: 25px;
+}
+.creations-img{
+    display: grid;
+    grid-template-columns: repeat(4, 256px);
+    grid-template-rows: repeat(2, 450px);
+    grid-gap: 20px;
+}
+.col img{
+    transition: transform 250ms, opacity 200ms;
+    cursor: pointer;
+
+}
+.col img:hover{
+    transform: scale(1.02);
+    opacity: 0.8;
+}
+a{
+    font-size: 20px;
+}
+footer{
+    background-color: #000;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 90px;
+    justify-content: space-around;
+
+}
+.col-1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.col-1 p{
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 900;
+}
+.col-2 ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    
+}
+.col-1 ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.col-1 li{
+    list-style: none;
+}
+.col-1 a{
+    color: #fff;
+    text-decoration: none;
+}
+.col-2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.col-2 p{
+    color: gray;
+}
+a{
+    transition: color 250ms;
+
+}
+a:hover{
+    color: darkblue;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 980px){
+    header{
+        background-image: url("images/mobile/image-hero.jpg");
+        margin: auto;
+    }
+    .col ul{
+        display: block;
+        display: flex;
+        justify-content: space-around;
+    }
+    .col li{
+        font-size: 35px;
+    }
+    header ul{
+        display: none;
+    }
+    header h1{
+        display: none;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-text{
+        margin-top: 20px;
+    }
+    .container-text h1, p{
+        text-align: center;
+    }
+    .creations .row button{
+        position: relative;
+        top: 2600px;
+    }
+    .creations .row{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    
+    }
+    .creations-img{
+        display: flex;
+        flex-direction: column;
+    }
+    .creations-img img{
+        height: 200px;
+        width: 70vw;
+        object-fit: cover;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .col-1 ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .col-2 ul{
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

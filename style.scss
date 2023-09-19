@@ -1,0 +1,118 @@
+header{
+    background-image: url('images/desktop/image-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+    padding-right:80px;
+    padding-bottom: 130px;
+    .header-start{
+        display: flex;
+        flex-direction: row;
+        ul{
+            display: flex;
+            flex-direction: row;
+            padding-left: 60%;
+            gap: 30px;
+            li{
+                list-style-type: none;
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+    }
+    h3{
+        color: #fff;
+        font-weight: 700;
+        font-family: sans-serif;
+    }
+    .deliver{
+        border: 1px solid #fff;
+        padding: 5px;
+        color: #fff;
+        width: 370px;
+        font-size: 20px;
+        margin-top: 60px;
+    }
+}
+
+body{
+    .global-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 70px;
+        margin-left: 60px;
+        margin-right: 60px;
+        .leader-interactive{
+            display: flex;
+            flex-direction: row;
+            gap: 60px;
+            .text-title{
+                display: flex;
+                flex-direction: column;
+                margin-top: 115px;
+                h1{
+                    font-family: sans-serif;
+                    font-weight: 100;
+                }
+                p{
+                    color: grey;
+                }
+            }
+            img{
+                height: 320px;
+                object-fit: cover;
+            }
+        }
+        .creation{
+            display: flex;
+            flex-direction: row;
+            gap: 630px;
+            button{
+                outline: none;
+                background-color: #000;
+                border: 1px solid #000;
+                cursor: pointer;
+                color: #fff;
+                height: 30px;
+                width: 130px;
+                margin-top: 20px;
+            }
+            h1{
+                font-weight: 100;
+                font-family: sans-serif;
+            }
+        }
+    }
+    .images-creation{
+        display: grid;
+        grid-template-columns: repeat(4, 256px);
+        grid-template-rows: repeat(2, 450px)
+        grid-gap:25px;
+        img{
+            object-fit: cover;
+        }
+        img:hover{
+            opacity: 0.5;
+        }
+    }
+    
+}
+
+footer{
+    border: 1px solid #000;
+    background-color: #000;
+    .container-loops{
+        display: flex;
+        flex-direction: column;
+        ul{
+            display: flex;
+            flex-direction: row;
+            li{
+                list-style-type: none;
+            }
+        }
+    }
+}
